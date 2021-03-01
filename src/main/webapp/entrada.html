@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2021 Luis Guisso <luis.guisso at ifnmg.edu.br>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This source code is used in software development academic classes
+at IFNMG - Câmpus Montes Claros by Professor Luis Guisso
+and is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html lang="pt-BR">
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <p>Exemplo de uso de <i>servlet</i> para execução de operações aritméticas como processador de dados enviados pelo formulário apresentado abaixo.</p>
+        
+        <!--<form action="CalcServlet" method="get">-->
+        <form action="calculadora.jsp" method="get">
+            <fieldset>
+                <legend>Calculadora</legend>
+                
+                <label for="a">Parâmetro A</label><br>
+                <input id="a" name="vlra"><br>
+                
+                <label for="b">Parâmetro B</label><br>
+                <input id="b" name="vlrb"><br>
+                
+                <label for="o">Operação</label><br>
+                <select id="o" name="operacao">
+                    <option value="somar">Somar</option>
+                    <option value="subtrair">Subtrair</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+                </select>
+                
+                <input type="submit" value="Processar">
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
