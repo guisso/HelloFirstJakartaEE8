@@ -25,7 +25,8 @@ import javax.persistence.PersistenceContext;
  * @author Luis Guisso <luis.guisso at ifnmg.edu.br>
  */
 @Stateless
-public class PessoaOneToOneBean implements PessoaOneToOneBeanLocal {
+public class PessoaOneToOneBean 
+        implements PessoaOneToOneBeanLocal {
 
 //    @PersistenceContext(unitName = "RemotePU")
     @PersistenceContext(unitName = "SistemaPU")

@@ -35,7 +35,7 @@ import javax.transaction.Transactional;
 public class PessoaServlet extends HttpServlet {
 
     @Inject
-    PessoaHerancaBeanLocal pessoaHeranca;
+    private PessoaHerancaBeanLocal pessoaHeranca;
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

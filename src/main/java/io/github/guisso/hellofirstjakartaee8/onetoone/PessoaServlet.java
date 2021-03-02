@@ -38,7 +38,7 @@ import javax.transaction.Transactional;
 public class PessoaServlet extends HttpServlet {
 
     @Inject
-    private PessoaOneToOneBeanLocal pessoaManyToManyBean;
+    private PessoaOneToOneBeanLocal pessoaOneToOneBean;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -79,7 +79,7 @@ public class PessoaServlet extends HttpServlet {
 
         System.out.println(">> P1: " + pessoa1);
 
-        pessoaManyToManyBean.save(pessoa1);
+        pessoaOneToOneBean.save(pessoa1);
 
         // --
         Pessoa pessoa2 = new Pessoa();
@@ -91,7 +91,7 @@ public class PessoaServlet extends HttpServlet {
 
         System.out.println(">> P2: " + pessoa2);
 
-        pessoaManyToManyBean.save(pessoa2);
+        pessoaOneToOneBean.save(pessoa2);
 
         System.out.println("---- PÓS PERSISTÊNCIA ----");
 
@@ -100,11 +100,11 @@ public class PessoaServlet extends HttpServlet {
 
         System.out.println("---- PÓS RECUPERAÇÃO ----");
 
-        Pessoa pessoa1Bd = pessoaManyToManyBean
+        Pessoa pessoa1Bd = pessoaOneToOneBean
                 .find(pessoa1.getId());
         System.out.println("-> P1: " + pessoa1Bd);
 
-        Pessoa pessoa2Bd = pessoaManyToManyBean
+        Pessoa pessoa2Bd = pessoaOneToOneBean
                 .find(pessoa2.getId());
         System.out.println("-> P2: " + pessoa2Bd);
 

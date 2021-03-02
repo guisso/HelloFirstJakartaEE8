@@ -18,6 +18,7 @@ package io.github.guisso.hellofirstjakartaee8.onetomany;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.FlushModeType;
 import javax.persistence.PersistenceContext;
 
 /**
@@ -25,7 +26,8 @@ import javax.persistence.PersistenceContext;
  * @author Luis Guisso <luis.guisso at ifnmg.edu.br>
  */
 @Stateless
-public class PessoaOneToManyBean implements PessoaOneToManyBeanLocal {
+public class PessoaOneToManyBean 
+        implements PessoaOneToManyBeanLocal {
 
 //    @PersistenceContext(unitName = "RemotePU")
     @PersistenceContext(unitName = "SistemaPU")
@@ -34,6 +36,7 @@ public class PessoaOneToManyBean implements PessoaOneToManyBeanLocal {
     @Override
     public void save(Pessoa pessoa) {
         entityManager.persist(pessoa);
+        // entityManager.flush();
     }
 
     @Override

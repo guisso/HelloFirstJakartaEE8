@@ -95,6 +95,7 @@ public class PessoaServlet extends HttpServlet {
         cadastro1.setPessoa(pessoa1);
         cadastro1.setEndereco(endereco1);
         pessoa1.getCadastros().add(cadastro1);
+        endereco1.getCadastros().add(cadastro1);
 
         Cadastro cadastro2 = new Cadastro();
         cadastro2.setObservacao("Observação 2");
@@ -104,6 +105,7 @@ public class PessoaServlet extends HttpServlet {
         cadastro2.setPessoa(pessoa1);
         cadastro2.setEndereco(endereco2);
         pessoa1.getCadastros().add(cadastro2);
+        endereco2.getCadastros().add(cadastro2);
 
         Cadastro cadastro3 = new Cadastro();
         cadastro3.setObservacao("Observação 3");
@@ -113,6 +115,7 @@ public class PessoaServlet extends HttpServlet {
         cadastro3.setPessoa(pessoa1);
         cadastro3.setEndereco(endereco3);
         pessoa1.getCadastros().add(cadastro3);
+        endereco3.getCadastros().add(cadastro3);
 
         System.out.println(">> P1: " + pessoa1);
 
@@ -131,6 +134,7 @@ public class PessoaServlet extends HttpServlet {
         cadastro4.setPessoa(pessoa2);
         cadastro4.setEndereco(endereco1);
         pessoa2.getCadastros().add(cadastro4);
+        endereco1.getCadastros().add(cadastro4);
 
         Cadastro cadastro5 = new Cadastro();
         cadastro5.setObservacao("Observação 5");
@@ -140,6 +144,7 @@ public class PessoaServlet extends HttpServlet {
         cadastro5.setPessoa(pessoa2);
         cadastro5.setEndereco(endereco2);
         pessoa2.getCadastros().add(cadastro5);
+        endereco2.getCadastros().add(cadastro5);
 
         System.out.println(">> P2: " + pessoa2);
 
