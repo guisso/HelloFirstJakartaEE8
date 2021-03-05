@@ -5,6 +5,11 @@
     <class>io.github.guisso.hellofirstjakartaee8.inheritance.Pessoa</class>
     <class>io.github.guisso.hellofirstjakartaee8.inheritance.PessoaFisica</class>
     <class>io.github.guisso.hellofirstjakartaee8.inheritance.PessoaJuridica</class>
+    <class>io.github.guisso.hellofirstjakartaee8.jpql.Pessoa</class>
+    <class>io.github.guisso.hellofirstjakartaee8.jpql.Endereco</class>
+    <class>io.github.guisso.hellofirstjakartaee8.jpql.Telefone</class>
+    <class>io.github.guisso.hellofirstjakartaee8.jpql.Grupo</class>
+    <class>io.github.guisso.hellofirstjakartaee8.jpql.Cadastro</class>
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>

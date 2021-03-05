@@ -31,8 +31,8 @@ public class Util {
     public static String toJson(Object object) {
         JsonbConfig config = new JsonbConfig()
                 .withFormatting(true)
-                // [hh:mm:mm] é opcional para os casos de LocalDate
-                .withDateFormat("dd/MM/yyyy [hh:mm:ss]",
+                // [ hh:mm:mm] é opcional para os casos de LocalDate
+                .withDateFormat("dd/MM/yyyy[ hh:mm:ss]",
                         Locale.forLanguageTag("pt_BR")
 //                        null
                         )
