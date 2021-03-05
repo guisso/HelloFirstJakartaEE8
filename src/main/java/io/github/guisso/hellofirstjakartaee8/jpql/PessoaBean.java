@@ -129,5 +129,20 @@ public class PessoaBean
                 .setParameter("data", data)
                 .getResultList();
     }
+    
+    //
+    // Verificar observação para a consulta respectiva
+    // na entidade correlacionada
+    //
+//    @Override
+//    public List<Pessoa> findAllPessoaByIdadeRange(Short idadeInicial, Short idadeFinal) {
+//        return entityManager
+//                .createNamedQuery("Pessoa.findAllPessoaByIdadeRange", Pessoa.class)
+//                .setParameter("idadeInicial", idadeInicial)
+//                .setParameter("idadeFinal", idadeFinal)
+//                .getResultList();
+//    }
+    
+    
 
 }

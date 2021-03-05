@@ -202,10 +202,10 @@ public class PessoaServlet extends HttpServlet {
             out.println("<h1>Servlet PessoaServlet: JPQL</h1>");
             out.println("<p>Processamento concluído com sucesso.</p>");
             //--
-            out.println("<h2>Objeto toJson</h2>");
-            out.println("<pre class=\"high\">"
-                    + Util.toJson(pessoa1)
-                    + "</pre>");
+//            out.println("<h2>Objeto toJson</h2>");
+//            out.println("<pre class=\"high\">"
+//                    + Util.toJson(pessoa1)
+//                    + "</pre>");
             //--
 //            out.println("<pre class=\"high\">"
 //                    + Util.toJson(pessoa2)
@@ -253,6 +253,14 @@ public class PessoaServlet extends HttpServlet {
 //                    + Util.toJson(pessoaBean.findPessoaGrupoCadastroApos(
 //                            // LocalDateTime do dia específico a partir da 00:00:00.000000000
 //                            LocalDate.of(2021, Month.JANUARY, 1).atStartOfDay()))
+//                    + "</pre>");
+            //--
+            //-- Verificar observação para a consulta respectiva
+            //-- na entidade correlacionada
+            //--
+//            out.println("<h2>findAllPessoaByIdadeRange (20 ~ 35)</h2>");
+//            out.println("<pre class=\"high\">"
+//                    + Util.toJson(pessoaBean.findAllPessoaByIdadeRange((short) 20, (short) 35))
 //                    + "</pre>");
             //--
             out.println("<a href=\"index.html\">Voltar</a>");

@@ -85,8 +85,20 @@ import javax.persistence.Transient;
             + "FROM jpqlPessoa p "
             + "JOIN p.cadastros c "
             + "JOIN c.grupo g "
-            + "WHERE c.dataHoraCadastro >= :data")
+            + "WHERE c.dataHoraCadastro >= :data"),
 //            query = "NÃO TEM JPQL AQUI")
+    //
+    // Falha porque idade, apesar de ser um atributo
+    // acessível no objeto, não corresponde a um campo
+    // presente no banco de dados (@Transient)
+    //
+//    @NamedQuery(
+//            name = "Pessoa.findAllPessoaByIdadeRange",
+//            query = "SELECT p "
+//                    + "FROM jpqlPessoa p "
+//                    + "WHERE p.idade "
+//                    + "BETWEEN :idadeInicial AND :idadeFinal"
+//    )
 })
 //</editor-fold>
 public class Pessoa implements Serializable {

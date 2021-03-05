@@ -48,5 +48,11 @@ public interface PessoaBeanLocal {
     List<Object[]> findPessoaGrupoCadastroApos(LocalDateTime data);
 
     List<Pessoa> findAllPessoaNPlusOne();
+
+    //
+    // Verificar observação para a consulta respectiva
+    // na entidade correlacionada
+    //
+//    List<Pessoa> findAllPessoaByIdadeRange(Short idadeInicial, Short idadeFinal);
     
 }
