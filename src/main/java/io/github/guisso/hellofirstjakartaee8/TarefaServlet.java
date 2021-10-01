@@ -58,7 +58,6 @@ public class TarefaServlet extends HttpServlet {
         tarefaBean.salvar(tarefa);
 
         // Objeto recém-salvo e não gerenciado
-//        tarefaBean.salvar(tarefa);
 
         tarefa.setDescricao("Concluir estudos sobre EJB e JPA");
         tarefa.setConcluida(false);
@@ -66,6 +65,7 @@ public class TarefaServlet extends HttpServlet {
         // Atualização de objeto
         tarefaBean.salvar(tarefa);
         
+        // O que foi persistido no banco?
         
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
